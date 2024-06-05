@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D388E213-8E03-43B3-B31C-6EF981EC2609}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Tomapedidos</RootNamespace>
+    <AssemblyName>Tomapedidos</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>X:\APP BODEGA DE NACHO\Nuevos projectos\ejecutable del TomaPedidos\x84\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/Tomapedidos/</UpdateUrl>
+    <TargetCulture>es-CO</TargetCulture>
+    <ProductName>krats_tomapedidos</ProductName>
+    <PublisherName>carlosLopez</PublisherName>
+    <SuiteName>krats</SuiteName>
+    <MinimumRequiredVersion>1.0.0.21</MinimumRequiredVersion>
+    <ApplicationRevision>23</ApplicationRevision>
+    <ApplicationVersion>1.0.0.23</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>67A2B9C4D09DC4485AC652B8558FF191E090F405</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>TomaPedido_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject>ConexionBaseDeDatos.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LOGO.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>C:\Users\user\Desktop\curso c#\interfaz\recursos\recursos\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CONEXION.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logica\CD_Asesor.cs" />
+    <Compile Include="Logica\CD_Cliente.cs" />
+    <Compile Include="Logica\CD_Configuracion.cs" />
+    <Compile Include="Logica\CD_DashBoard.cs" />
+    <Compile Include="Logica\CD_Saldos.cs" />
+    <Compile Include="Logica\CD_UnidadResidencial.cs" />
+    <Compile Include="Logica\LaBodegaWeb\CD_CarritoWeb.cs" />
+    <Compile Include="Logica\LaBodegaWeb\CD_ClienteWeb.cs" />
+    <Compile Include="Logica\LaBodegaWeb\CD_MensajeWeb.cs" />
+    <Compile Include="Logica\LaBodegaWeb\CD_ProductoWeb.cs" />
+    <Compile Include="Logica\LaBodegaWeb\CD_VentaWeb.cs" />
+    <Compile Include="Modelos\Asesor.cs" />
+    <Compile Include="Modelos\Configuracion.cs" />
+    <Compile Include="Modelos\Deplegables\TipoDocumento.cs" />
+    <Compile Include="Modelos\Deplegables\UnidadResidencial.cs" />
+    <Compile Include="Modelos\DetalleVenta.cs" />
+    <Compile Include="Modelos\InputBoxMessage.cs" />
+    <Compile Include="Modelos\Mensaje_Cliente.cs" />
+    <Compile Include="Modelos\PQRS.cs" />
+    <Compile Include="Modelos\PQRS_Seguimiento.cs" />
+    <Compile Include="Modelos\Saldo.cs" />
+    <Compile Include="Presentacion\Asesores\Frm_Asesores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Asesores\Frm_Asesores.Designer.cs">
+      <DependentUpon>Frm_Asesores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Clientes\FrmConsultaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Clientes\FrmConsultaCliente.Designer.cs">
+      <DependentUpon>FrmConsultaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Clientes\Frm_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Clientes\Frm_Clientes.Designer.cs">
+      <DependentUpon>Frm_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Clientes\Frm_Saldos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Clientes\Frm_Saldos.Designer.cs">
+      <DependentUpon>Frm_Saldos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\DashBoard\DashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\DashBoard\DashBoard.Designer.cs">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Logistico\Frm_BuscarFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Logistico\Frm_BuscarFactura.Designer.cs">
+      <DependentUpon>Frm_BuscarFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Logistico\Frm_BuscarVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Logistico\Frm_BuscarVentas.Designer.cs">
+      <DependentUpon>Frm_BuscarVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PaginaWeb\ClientesWeb\Frm_ClientesWeb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\PaginaWeb\ClientesWeb\Frm_ClientesWeb.Designer.cs">
+      <DependentUpon>Frm_ClientesWeb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PaginaWeb\MensajesWeb\FrmMensajesWeb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\PaginaWeb\MensajesWeb\FrmMensajesWeb.Designer.cs">
+      <DependentUpon>FrmMensajesWeb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PaginaWeb\ProductosWeb\Frm_ProductosWeb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\PaginaWeb\ProductosWeb\Frm_ProductosWeb.Designer.cs">
+      <DependentUpon>Frm_ProductosWeb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PQRS\Frm_PQRS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\PQRS\Frm_PQRS.Designer.cs">
+      <DependentUpon>Frm_PQRS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Reportes\Frm_Reporte_Venta_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Reportes\Frm_Reporte_Venta_Cliente.Designer.cs">
+      <DependentUpon>Frm_Reporte_Venta_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Sistema\Frm_Configuracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Sistema\Frm_Configuracion.Designer.cs">
+      <DependentUpon>Frm_Configuracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Logistico\Frm_DetallePedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Logistico\Frm_DetallePedido.Designer.cs">
+      <DependentUpon>Frm_DetallePedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Productos\Frm_Producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Productos\Frm_Producto.Designer.cs">
+      <DependentUpon>Frm_Producto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Sistema\Frm_FormatoDireccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Sistema\Frm_FormatoDireccion.Designer.cs">
+      <DependentUpon>Frm_FormatoDireccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Sistema\Frm_MensajeCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Sistema\Frm_MensajeCliente.Designer.cs">
+      <DependentUpon>Frm_MensajeCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Sistema\InputBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Sistema\InputBoxForm.Designer.cs">
+      <DependentUpon>InputBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logica\AccionesHTTP.cs" />
+    <Compile Include="Logica\CD_ClienteXpos.cs" />
+    <Compile Include="Logica\CD_Guardadores.cs" />
+    <Compile Include="Logica\CD_Pedido.cs" />
+    <Compile Include="Logica\LoopConsultas.cs" />
+    <Compile Include="Logica\Servicios.cs" />
+    <Compile Include="Modelos\Cliente.cs" />
+    <Compile Include="Modelos\DatosComanda.cs" />
+    <Compile Include="Modelos\DatosPedido.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Presentacion\Logistico\ReportesImpresion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Logistico\ReportesImpresion.Designer.cs">
+      <DependentUpon>ReportesImpresion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\TomaPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\TomaPedido.Designer.cs">
+      <DependentUpon>TomaPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilitarios\Funciones.cs" />
+    <Compile Include="Modelos\CarritoWeb.cs" />
+    <Compile Include="Modelos\ClienteWeb.cs" />
+    <Compile Include="Modelos\MensajeWeb.cs" />
+    <Compile Include="Modelos\ProductoWeb.cs" />
+    <Compile Include="Modelos\VentaWeb.cs" />
+    <Compile Include="Utilitarios\Recursos.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Asesores\Frm_Asesores.resx">
+      <DependentUpon>Frm_Asesores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Clientes\FrmConsultaCliente.resx">
+      <DependentUpon>FrmConsultaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Clientes\Frm_Clientes.resx">
+      <DependentUpon>Frm_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Clientes\Frm_Saldos.resx">
+      <DependentUpon>Frm_Saldos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\DashBoard\DashBoard.resx">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Logistico\Frm_BuscarFactura.resx">
+      <DependentUpon>Frm_BuscarFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Logistico\Frm_BuscarVentas.resx">
+      <DependentUpon>Frm_BuscarVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PQRS\Frm_PQRS.resx">
+      <DependentUpon>Frm_PQRS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Reportes\Frm_Reporte_Venta_Cliente.resx">
+      <DependentUpon>Frm_Reporte_Venta_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Sistema\Frm_Configuracion.resx">
+      <DependentUpon>Frm_Configuracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Logistico\Frm_DetallePedido.resx">
+      <DependentUpon>Frm_DetallePedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Productos\Frm_Producto.resx">
+      <DependentUpon>Frm_Producto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Sistema\Frm_FormatoDireccion.resx">
+      <DependentUpon>Frm_FormatoDireccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Sistema\Frm_MensajeCliente.resx">
+      <DependentUpon>Frm_MensajeCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Sistema\InputBoxForm.resx">
+      <DependentUpon>InputBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Presentacion\Logistico\ReportesImpresion.resx">
+      <DependentUpon>ReportesImpresion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\TomaPedido.resx">
+      <DependentUpon>TomaPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TomaPedido_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB1">
+      <Guid>{B691E011-1797-432E-907A-4D8C69339129}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Formularios\" />
+    <Folder Include="Modelos\Tipo\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagen logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Carrito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AgregarCirculo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EliminarCirculo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CuentaCirculo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comentario_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Guna.UI">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LOGO.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,30 @@
+C:\Users\user\Desktop\curso C#\ConexionBaseDeDatos\ConexionBaseDeDatos\bin\Debug\ConexionBaseDeDatos.exe.config
+C:\Users\user\Desktop\curso C#\ConexionBaseDeDatos\ConexionBaseDeDatos\bin\Debug\ConexionBaseDeDatos.exe
+C:\Users\user\Desktop\curso C#\ConexionBaseDeDatos\ConexionBaseDeDatos\bin\Debug\ConexionBaseDeDatos.pdb
+C:\Users\user\Desktop\curso C#\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\curso C#\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\curso C#\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.Form1.resources
+C:\Users\user\Desktop\curso C#\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.Properties.Resources.resources
+C:\Users\user\Desktop\curso C#\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.csproj.GenerateResource.cache
+C:\Users\user\Desktop\curso C#\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\curso C#\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.exe
+C:\Users\user\Desktop\curso C#\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.pdb
+C:\Users\user\Desktop\curso C#\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\Interop.ADODB.dll
+C:\Users\user\Desktop\curso C#\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.csproj.ResolveComReference.cache
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\bin\Debug\ConexionBaseDeDatos.exe.config
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\bin\Debug\ConexionBaseDeDatos.exe
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\bin\Debug\ConexionBaseDeDatos.pdb
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.csproj.AssemblyReference.cache
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\Interop.ADODB.dll
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.csproj.ResolveComReference.cache
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.Form1.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.Properties.Resources.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.TomaPedido.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.csproj.GenerateResource.cache
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.csproj.CoreCompileInputs.cache
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.exe
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.pdb
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.Frm_Producto.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.InputBoxForm.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.csproj.CopyComplete
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.Frm_Login.resources

@@ -1,0 +1,1 @@
+- para solucionar el que lea la base de datos, es necesario entrar a las propiedades del proyecto, entrar a compilación, y modificar el any cpu a x 64

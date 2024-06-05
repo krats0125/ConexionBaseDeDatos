@@ -1,0 +1,166 @@
+1) Tomar los pedidos con la misma normalidad con la que toman los pedidos a travez del excel (listo)
+
+2) mejorar el tema de procesos utilizando metodos asíncronos(listo)
+
+3) mejorar el tema del orden de los productos utilizando de guia el "pasillo" y el departamento. - esto al imprimir la comanda, pero aun no se va a trabajar por que el string que recibe la pagina de la vecindad no recibe ningún parámetro de orden
+
+4) Imprimiendo la parte de la carniceria y la parte de la legumbreria en impresoras diferentes con el mismo id de venta (por ahora la impresión la tiene el la impresión del whatsapp)
+
+5) Tener control sobre los pedidos de la pagina web 
+
+6) tener control sobre los clientes en la pagina web
+
+7) arrojar reportes que permitan tomar decisiones 
+
+8) Tener control de las publicaciones que se realizan en la pagina web
+
+9) Manejo de los rut de todos los clientes que solicitan factura electronica
+
+10) Control de los productos dentro del carrito de la pagina web x cliente
+
+11) habrá un boton que redireccione rápidamente al whats app del teléfono
+    que este estén en los guardadores (esto con el fin de que puedan revisar
+    por encima si el cliente a dado alguna respuesta sin tener que entrara buscarlos)
+     - ya se creo, es muy efectivo teniendo a aplicación   
+
+12) Enviar el pedido a la pagina web de la vecindad y del supermercado (Apis) (listo) 
+
+13) que los usuarios dentro del sistema se puedan mandar notificaciones o mensajes internos
+
+14) que el sistema revise los mensajes de los cliente que escriben por la pagina de manera emergente
+
+15) que se puedan agregar clientes detractores para tener un mayor cuidado con estos clientes, esto se debe de manejar en una base de datos
+
+16) que revise a manera semaforo cuanto tiempo lleva hablando con un cliente (ya esta creado, aun no se define el tiempo, ni la alerta )
+
+17) un espacio donde copiar y pegar pedido del whats app y que aun asi se imprima de manera correcta. este solo de uso 
+
+18) Poder crear los clientes, y que el sistema de torres este predeterminada.
+
+19) Generar sistema de lectura de eventos 
+   {
+     - subir los productos que hacen parte del evento a una tabla con rango de fecha [Plu, Descripcion, FechaInicial, FechaFinal ]
+     - revisar el Plu de los productos de venta con la tabla de los productos que están en la tabla filtrando
+     - que se revisar según una escala unos eventos emergentes       
+}
+
+datos que debe de tener el dash board
+- cantidad de pedidos por el usuario.
+- productos de eventos vendidos ranking
+- Ticket de venta 
+- productos que están en promoción
+- 
+
+using System.Net.Http;
+using Newtonsoft.Json;
+
+¿ como organizo que se recoja información de la venta presencial?
+- Aunque el cliente compre de manera presencial, como me doy cuenta que no fue una venta de domicilio.
+
+1) por que no queda registro alguno de alguna llamada o pedido a travez de la pagina
+2) No se le registra le item domicilio
+3) 
+
+
+_____________________________________________________
+generar una consulta de la categoría de los productos en promoción para que se le ofrezcan a los clientes hasta en las cajas
+
+consulta de ultima factura generada 
+
+SELECT Last(tblVentaPOS.lngIDCaja) AS ÚltimoDelngIDCaja, Last(tblVentaPOS.lngIDVenta) AS ÚltimoDelngIDVenta, Last(tblVentaPOS.dtmFechaHora) AS ÚltimoDedtmFechaHora
+FROM tblVentaPOS
+GROUP BY tblVentaPOS.strIDCliente
+HAVING (((tblVentaPOS.strIDCliente)="3013290093"));
+
+consulta de promedio de ticket
+
+SELECT sum(tblVentaPOS.sngTotal) / count(tblVentaPOS.sngTotal) as promedio
+FROM tblVentaPOS
+WHERE (((tblVentaPOS.strIDCliente)="3013290093"));
+
+
+consulta, reporte de compras
+
+SELECT tblVentaPOS.lngIDCaja, tblVentaPOS.lngIDVenta, tblVentaPOS.strIDCajero, tblVentaPOS.dtmFechaHora, tblVentaPOS.sngTotal, tblCliente.strTelefono, tblCliente.strDireccion, tblVendedor.strNombreLargo
+FROM tblVendedor INNER JOIN (tblVentaPOS INNER JOIN tblCliente ON tblVentaPOS.strIDCliente = tblCliente.strIDCliente) ON tblVendedor.bytIDVendedor = tblVentaPOS.bytIDVendedor
+WHERE (((tblVentaPOS.strIDCliente)="3013290093"))
+ORDER BY tblVentaPOS.dtmFechaHora DESC;
+
+Hora y frecuenta en compra del cliente
+
+SELECT TOP 1
+    Format([dtmFechaHora], 'hh') AS HoraCompra,
+    Count(*) AS Frecuencia
+FROM
+    tblVentaPOS
+WHERE
+    strIDCliente = "3013290093"
+GROUP BY
+    Format([dtmFechaHora], 'hh')
+ORDER BY
+    Frecuencia DESC;
+
+
+
+
+
+funciones que se necesitan para hoy 
+
+preguntar si el cliente requiere facturación electrónica. 
+ - cuadro de dialogo, donde se pregunta, y en caso de que la respuesta, 
+   sea un si opciones:
+   a) un cuadro de dialogo donde que tomen los datos de la facturación 
+      electrónica. (Nit, Razón social, correo)
+   b) crear al usuario para la facturación electrónica. y pedir al cliente que nos envie el rut y guardarlo en una carpeta 
+ -
+
+ -
+ -
+ -
+creación de cliente. 
+modificación de los teléfonos d
+impresión por parte de los supervisores de las comandas que de requieran.
+
+botones faltantes.
+>> Guardar saldos a favor.
+{
+- listar saldos.
+- Guardar Saldos,
+- Consultar saldos a favor en la búsqueda del telefono
+}
+
+>> Domicilio Cancelado
+{
+- Guardar domicilio cancelado.
+- listar Domicilio cancelado
+
+}
+--  opción de cancelar la selección del producto si este ya no se requiere o se selecciono por error
+-- poder ver los productos en promoción
+-- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+

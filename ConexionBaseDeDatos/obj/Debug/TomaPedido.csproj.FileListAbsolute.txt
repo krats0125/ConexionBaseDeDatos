@@ -1,0 +1,72 @@
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\TomaPedido.csproj.AssemblyReference.cache
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\Interop.ADODB.dll
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\TomaPedido.csproj.ResolveComReference.cache
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.Form1.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.Frm_DetallePedido.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.Frm_Login.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.Frm_Producto.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.InputBoxForm.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.ReportesImpresion.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.TomaPedido.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\TomaPedido.csproj.GenerateResource.cache
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\TomaPedido.csproj.CoreCompileInputs.cache
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.Frm_Configuracion.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\bin\Debug\Newtonsoft.Json.dll
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\bin\Debug\Newtonsoft.Json.xml
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.Presentacion.Principal.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.Presentacion.Asesores.Frm_Asesores.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.Presentacion.Logistico.Frm_BuscarFactura.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\Tomapedidos.Properties.Resources.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\Tomapedidos.exe.licenses
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\bin\Debug\Tomapedidos.exe.config
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\bin\Debug\Tomapedidos.exe.manifest
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\bin\Debug\Tomapedidos.application
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\bin\Debug\Tomapedidos.exe
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\bin\Debug\Tomapedidos.pdb
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\Tomapedidos.exe.manifest
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\Tomapedidos.application
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\Tomapedidos.exe
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\Tomapedidos.pdb
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.Presentacion.PQRS.Frm_PQRS.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\bin\Debug\Guna.UI.dll
+X:\APP BODEGA DE NACHO\Nuevos projectos\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\TomaPedido.csproj.Up2Date
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\bin\Debug\Tomapedidos.exe.config
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\bin\Debug\Tomapedidos.exe.manifest
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\bin\Debug\Tomapedidos.application
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\bin\Debug\Tomapedidos.exe
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\bin\Debug\Tomapedidos.pdb
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\bin\Debug\Newtonsoft.Json.dll
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\bin\Debug\Newtonsoft.Json.xml
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\TomaPedido.csproj.AssemblyReference.cache
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\Interop.ADODB.dll
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\TomaPedido.csproj.ResolveComReference.cache
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.Form1.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.Presentacion.Asesores.Frm_Asesores.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.Presentacion.Logistico.Frm_BuscarFactura.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.Presentacion.PQRS.Frm_PQRS.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.Presentacion.Principal.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.Frm_Configuracion.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.Frm_DetallePedido.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.Frm_Login.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.Frm_Producto.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.InputBoxForm.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\Tomapedidos.Properties.Resources.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.ReportesImpresion.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.TomaPedido.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\TomaPedido.csproj.GenerateResource.cache
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\Tomapedidos.exe.licenses
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\TomaPedido.csproj.CoreCompileInputs.cache
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\Tomapedidos.exe.manifest
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\Tomapedidos.application
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\Tomapedidos.exe
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\Tomapedidos.pdb
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\bin\Debug\Guna.UI2.dll
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.Presentacion.Clientes.Frm_Clientes.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\Tomapedidos.Presentacion.Clientes.FrmConsultaCliente.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\Tomapedidos.Presentacion.Sistema.Frm_FormatoDireccion.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\Tomapedidos.Presentacion.DashBoard.DashBoard.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\Tomapedidos.Presentacion.Reportes.Frm_Reporte_Venta_Cliente.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\Tomapedidos.Presentacion.Sistema.Frm_MensajeCliente.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\ConexionBaseDeDatos.Presentacion.Logistico.Frm_BuscarVentas.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\Tomapedidos.Presentacion.Clientes.Frm_Saldos.resources
+X:\APP BODEGA DE NACHO\Nuevos projectos\Formatos windows Forms\ConexionBaseDeDatos\ConexionBaseDeDatos\obj\Debug\TomaPedido.csproj.CopyComplete

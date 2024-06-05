@@ -1,0 +1,174 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "X:\\APP BODEGA DE NACHO\\Nuevos projectos\\Formatos windows Forms\\ConexionBaseDeDatos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D388E213-8E03-43B3-B31C-6EF981EC2609}|ConexionBaseDeDatos\\TomaPedido.csproj|x:\\app bodega de nacho\\nuevos projectos\\formatos windows forms\\conexionbasededatos\\conexionbasededatos\\logica\\cd_saldos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D388E213-8E03-43B3-B31C-6EF981EC2609}|ConexionBaseDeDatos\\TomaPedido.csproj|solutionrelative:conexionbasededatos\\logica\\cd_saldos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D388E213-8E03-43B3-B31C-6EF981EC2609}|ConexionBaseDeDatos\\TomaPedido.csproj|x:\\app bodega de nacho\\nuevos projectos\\formatos windows forms\\conexionbasededatos\\conexionbasededatos\\presentacion\\tomapedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D388E213-8E03-43B3-B31C-6EF981EC2609}|ConexionBaseDeDatos\\TomaPedido.csproj|solutionrelative:conexionbasededatos\\presentacion\\tomapedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D388E213-8E03-43B3-B31C-6EF981EC2609}|ConexionBaseDeDatos\\TomaPedido.csproj|x:\\app bodega de nacho\\nuevos projectos\\formatos windows forms\\conexionbasededatos\\conexionbasededatos\\presentacion\\logistico\\reportesimpresion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D388E213-8E03-43B3-B31C-6EF981EC2609}|ConexionBaseDeDatos\\TomaPedido.csproj|solutionrelative:conexionbasededatos\\presentacion\\logistico\\reportesimpresion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D388E213-8E03-43B3-B31C-6EF981EC2609}|ConexionBaseDeDatos\\TomaPedido.csproj|X:\\APP BODEGA DE NACHO\\Nuevos projectos\\Formatos windows Forms\\ConexionBaseDeDatos\\conexionbasededatos\\logica\\cd_pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D388E213-8E03-43B3-B31C-6EF981EC2609}|ConexionBaseDeDatos\\TomaPedido.csproj|solutionrelative:conexionbasededatos\\logica\\cd_pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D388E213-8E03-43B3-B31C-6EF981EC2609}|ConexionBaseDeDatos\\TomaPedido.csproj|X:\\APP BODEGA DE NACHO\\Nuevos projectos\\Formatos windows Forms\\ConexionBaseDeDatos\\conexionbasededatos\\presentacion\\logistico\\frm_detallepedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D388E213-8E03-43B3-B31C-6EF981EC2609}|ConexionBaseDeDatos\\TomaPedido.csproj|solutionrelative:conexionbasededatos\\presentacion\\logistico\\frm_detallepedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D388E213-8E03-43B3-B31C-6EF981EC2609}|ConexionBaseDeDatos\\TomaPedido.csproj|X:\\APP BODEGA DE NACHO\\Nuevos projectos\\Formatos windows Forms\\ConexionBaseDeDatos\\conexionbasededatos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D388E213-8E03-43B3-B31C-6EF981EC2609}|ConexionBaseDeDatos\\TomaPedido.csproj|solutionrelative:conexionbasededatos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D388E213-8E03-43B3-B31C-6EF981EC2609}|ConexionBaseDeDatos\\TomaPedido.csproj|X:\\APP BODEGA DE NACHO\\Nuevos projectos\\Formatos windows Forms\\ConexionBaseDeDatos\\conexionbasededatos\\presentacion\\logistico\\reportesimpresion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D388E213-8E03-43B3-B31C-6EF981EC2609}|ConexionBaseDeDatos\\TomaPedido.csproj|solutionrelative:conexionbasededatos\\presentacion\\logistico\\reportesimpresion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D388E213-8E03-43B3-B31C-6EF981EC2609}|ConexionBaseDeDatos\\TomaPedido.csproj|X:\\APP BODEGA DE NACHO\\Nuevos projectos\\Formatos windows Forms\\ConexionBaseDeDatos\\conexionbasededatos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D388E213-8E03-43B3-B31C-6EF981EC2609}|ConexionBaseDeDatos\\TomaPedido.csproj|solutionrelative:conexionbasededatos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6d4078d1-5951-4ed1-ac0e-0a8099c1cce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CD_Saldos.cs",
+              "DocumentMoniker": "X:\\APP BODEGA DE NACHO\\Nuevos projectos\\Formatos windows Forms\\ConexionBaseDeDatos\\ConexionBaseDeDatos\\Logica\\CD_Saldos.cs",
+              "RelativeDocumentMoniker": "ConexionBaseDeDatos\\Logica\\CD_Saldos.cs",
+              "ToolTip": "X:\\APP BODEGA DE NACHO\\Nuevos projectos\\Formatos windows Forms\\ConexionBaseDeDatos\\ConexionBaseDeDatos\\Logica\\CD_Saldos.cs",
+              "RelativeToolTip": "ConexionBaseDeDatos\\Logica\\CD_Saldos.cs",
+              "ViewState": "AQIAAMEAAAAAAAAAAAAqwMkAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T22:18:13.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TomaPedido.cs",
+              "DocumentMoniker": "X:\\APP BODEGA DE NACHO\\Nuevos projectos\\Formatos windows Forms\\ConexionBaseDeDatos\\ConexionBaseDeDatos\\Presentacion\\TomaPedido.cs",
+              "RelativeDocumentMoniker": "ConexionBaseDeDatos\\Presentacion\\TomaPedido.cs",
+              "ToolTip": "X:\\APP BODEGA DE NACHO\\Nuevos projectos\\Formatos windows Forms\\ConexionBaseDeDatos\\ConexionBaseDeDatos\\Presentacion\\TomaPedido.cs",
+              "RelativeToolTip": "ConexionBaseDeDatos\\Presentacion\\TomaPedido.cs",
+              "ViewState": "AQIAAIMAAAAAAAAAAAAIwKYAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T22:14:38.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CD_Pedido.cs",
+              "DocumentMoniker": "X:\\APP BODEGA DE NACHO\\Nuevos projectos\\Formatos windows Forms\\ConexionBaseDeDatos\\ConexionBaseDeDatos\\Logica\\CD_Pedido.cs",
+              "RelativeDocumentMoniker": "ConexionBaseDeDatos\\Logica\\CD_Pedido.cs",
+              "ToolTip": "X:\\APP BODEGA DE NACHO\\Nuevos projectos\\Formatos windows Forms\\ConexionBaseDeDatos\\ConexionBaseDeDatos\\Logica\\CD_Pedido.cs",
+              "RelativeToolTip": "ConexionBaseDeDatos\\Logica\\CD_Pedido.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAgwPsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T04:08:13.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Frm_DetallePedido.cs",
+              "DocumentMoniker": "X:\\APP BODEGA DE NACHO\\Nuevos projectos\\Formatos windows Forms\\ConexionBaseDeDatos\\ConexionBaseDeDatos\\Presentacion\\Logistico\\Frm_DetallePedido.cs",
+              "RelativeDocumentMoniker": "ConexionBaseDeDatos\\Presentacion\\Logistico\\Frm_DetallePedido.cs",
+              "ToolTip": "X:\\APP BODEGA DE NACHO\\Nuevos projectos\\Formatos windows Forms\\ConexionBaseDeDatos\\ConexionBaseDeDatos\\Presentacion\\Logistico\\Frm_DetallePedido.cs",
+              "RelativeToolTip": "ConexionBaseDeDatos\\Presentacion\\Logistico\\Frm_DetallePedido.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwCkAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T04:08:13.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CONEXION.cs",
+              "DocumentMoniker": "X:\\APP BODEGA DE NACHO\\Nuevos projectos\\Formatos windows Forms\\ConexionBaseDeDatos\\ConexionBaseDeDatos\\CONEXION.cs",
+              "RelativeDocumentMoniker": "ConexionBaseDeDatos\\CONEXION.cs",
+              "ToolTip": "X:\\APP BODEGA DE NACHO\\Nuevos projectos\\Formatos windows Forms\\ConexionBaseDeDatos\\ConexionBaseDeDatos\\CONEXION.cs",
+              "RelativeToolTip": "ConexionBaseDeDatos\\CONEXION.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAowEMAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T04:12:16.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "X:\\APP BODEGA DE NACHO\\Nuevos projectos\\Formatos windows Forms\\ConexionBaseDeDatos\\ConexionBaseDeDatos\\Program.cs",
+              "RelativeDocumentMoniker": "ConexionBaseDeDatos\\Program.cs",
+              "ToolTip": "X:\\APP BODEGA DE NACHO\\Nuevos projectos\\Formatos windows Forms\\ConexionBaseDeDatos\\ConexionBaseDeDatos\\Program.cs",
+              "RelativeToolTip": "ConexionBaseDeDatos\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T04:07:42.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReportesImpresion.cs",
+              "DocumentMoniker": "X:\\APP BODEGA DE NACHO\\Nuevos projectos\\Formatos windows Forms\\ConexionBaseDeDatos\\ConexionBaseDeDatos\\Presentacion\\Logistico\\ReportesImpresion.cs",
+              "RelativeDocumentMoniker": "ConexionBaseDeDatos\\Presentacion\\Logistico\\ReportesImpresion.cs",
+              "ToolTip": "X:\\APP BODEGA DE NACHO\\Nuevos projectos\\Formatos windows Forms\\ConexionBaseDeDatos\\ConexionBaseDeDatos\\Presentacion\\Logistico\\ReportesImpresion.cs",
+              "RelativeToolTip": "ConexionBaseDeDatos\\Presentacion\\Logistico\\ReportesImpresion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFsAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T04:05:53.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReportesImpresion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "X:\\APP BODEGA DE NACHO\\Nuevos projectos\\Formatos windows Forms\\ConexionBaseDeDatos\\ConexionBaseDeDatos\\Presentacion\\Logistico\\ReportesImpresion.cs",
+              "RelativeDocumentMoniker": "ConexionBaseDeDatos\\Presentacion\\Logistico\\ReportesImpresion.cs",
+              "ToolTip": "X:\\APP BODEGA DE NACHO\\Nuevos projectos\\Formatos windows Forms\\ConexionBaseDeDatos\\ConexionBaseDeDatos\\Presentacion\\Logistico\\ReportesImpresion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ConexionBaseDeDatos\\Presentacion\\Logistico\\ReportesImpresion.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T04:03:27.43Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
