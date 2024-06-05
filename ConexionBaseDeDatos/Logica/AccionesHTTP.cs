@@ -103,7 +103,7 @@ namespace ConexionBaseDeDatos.Logica
                 // Convertir la fecha de "dd/mm/yyyy" a "yyyy-mm-dd"
                 DateTime fechaPedido = DateTime.ParseExact(DC.Fecha, "dd/MM/yyyy", CultureInfo.InvariantCulture);
                 string fechaFormateada = fechaPedido.ToString("yyyy-MM-dd");
-
+                // este solo es un comentario para ver si con los commit tambien  puedo ver los ultimos comentarios puestos
                 var objetoJson = new
                 {
                     json = new
