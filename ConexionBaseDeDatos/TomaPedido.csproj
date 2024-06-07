@@ -123,6 +123,7 @@
     <Compile Include="Logica\CD_Cliente.cs" />
     <Compile Include="Logica\CD_Configuracion.cs" />
     <Compile Include="Logica\CD_DashBoard.cs" />
+    <Compile Include="Logica\CD_Notificacion.cs" />
     <Compile Include="Logica\CD_Saldos.cs" />
     <Compile Include="Logica\CD_UnidadResidencial.cs" />
     <Compile Include="Logica\LaBodegaWeb\CD_CarritoWeb.cs" />
@@ -137,6 +138,7 @@
     <Compile Include="Modelos\DetalleVenta.cs" />
     <Compile Include="Modelos\InputBoxMessage.cs" />
     <Compile Include="Modelos\Mensaje_Cliente.cs" />
+    <Compile Include="Modelos\Notificacion.cs" />
     <Compile Include="Modelos\PQRS.cs" />
     <Compile Include="Modelos\PQRS_Seguimiento.cs" />
     <Compile Include="Modelos\Saldo.cs" />
