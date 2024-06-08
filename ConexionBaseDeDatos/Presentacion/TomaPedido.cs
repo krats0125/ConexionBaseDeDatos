@@ -191,25 +191,30 @@ namespace ConexionBaseDeDatos
 
         private async void btn_Guardar_Click(object sender, EventArgs e)
         {
+
             btn_Guardar.Enabled = false;
-            await Enviar();
-            btn_Guardar.Enabled = true;
-        }
 
-        private async Task Enviar()
-        {
 
-                DialogResult seEnvia= MessageBox.Show("Ya verificamos el pedido, Seguro(a)?", "Seleccione Medio",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
+            DialogResult seEnvia = MessageBox.Show("Ya verificamos el pedido, Seguro(a)?", "Seleccione Medio",
+            MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
 
             if (seEnvia == DialogResult.Yes)
             {
-               
+                ValidacionCampos();
+                await Enviar();
+                btn_Guardar.Enabled = true;
             }
             else if (seEnvia == DialogResult.No)
             {
+                btn_Guardar.Enabled = true;
                 return;
             }
+
+            btn_Guardar.Enabled = true;
+        }
+
+        private void ValidacionCampos()
+        {
 
             if (txtTelefono.Text == "" && chkAnexo.Checked != true)
             {
@@ -233,14 +238,20 @@ namespace ConexionBaseDeDatos
                 }
 
 
+                MessageBox.Show("El medio del pedido no puede estar vacio, elije entre Telefono o Whastapp");
 
-                //MessageBox.Show("El medio del pedido no puede estar vacio, elije entre Telefono o Whastapp");
-               
             }
 
-            // await VerificarCambios(); // este metodo asincrono  lo uso para actualizar los datos de los clientes.  solo el campo direccion y Nombre
+            //VerificarCambios(); // este metodo asincrono  lo uso para actualizar los datos de los clientes.  solo el campo direccion y Nombre
 
             
+
+
+        }
+
+        private async Task Enviar()
+        {
+                        
             lbMensajeProcesando.Visible = true;
 
             DatosComanda DC = new DatosComanda();
@@ -1177,13 +1188,35 @@ namespace ConexionBaseDeDatos
         #region Eventos de cambios en las celdas
 
 
-        private async Task VerificarCambios()
+        private void VerificarCambios()
         {
 
-            if (seHaBuscado)
+            if (seHaBuscado) // seHaBuscado es una variable que se utilliza para ver si recien realice una busqueda. y esto confirma que se trajo los datos de un cliente registrado
             {
+                // se revisa su hubo algun cambio en los datos que se trajeron inicialmente. 
                 if (txtNombre.Text != nombreOriginal || txtDireccion.Text != direccionOriginal)
                 {
+
+                    //  se debe proceder a buscar si la direccion que se puso ya esta creada en el sistema 
+
+                    /*
+                     - De estar creada la dirección, que debe revisar si hay un campo libre de la direccion en los campos de los telefonos,
+                    y si lo hay agregar el numero al campo del telefono... ¿pero que pasa con la direccion que estaba ocupando anterioirmente 
+                    nuestro cliente ?- despues de ingresar el dato a la direccion y liego eliminar el telefono de la direccion
+                    {
+                    caso: el  hombre de la casa ya no quiere vivir con los papas, y por lo tanti decide vivir en otro apartamento pero cerca del
+                    apartamento de los padres...
+                    
+                    }
+                     
+                    otra de las opciones es que se borre todos los numeros de la direccion anterior. suponiendo que todo el grupo familiar se cambio
+                    de casa.
+
+                     
+                     
+                     
+                     */
+
                     DialogResult result = MessageBox.Show("¿Desea actualizar el Nombre y la Direccion del cliente?", "Confirmar Actualización", MessageBoxButtons.YesNo);
                     if (result == DialogResult.Yes)
                     {
@@ -1194,7 +1227,9 @@ namespace ConexionBaseDeDatos
 
 
                         CD_ClienteXpos obj = new CD_ClienteXpos();
-                        bool respuesta = await obj.ActualizarNombreYDireccion(ocliente);
+
+                        obj.ActualizarNombreYDireccion(ocliente);
+                                       
 
 
                     }
