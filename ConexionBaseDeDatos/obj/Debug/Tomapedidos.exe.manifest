@@ -67,14 +67,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Tomapedidos.exe" size="634296">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Tomapedidos.exe" size="650168">
       <assemblyIdentity name="Tomapedidos" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/nVI1Kle3lJ/PVyz6Ul1Oe62R2WNtucpQFxOiLEh4jA=</dsig:DigestValue>
+        <dsig:DigestValue>M5PoS3jOfGX+681AFJTjZXP03rSwIKAvd6hHoeGCO2Q=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -18,7 +18,7 @@ namespace Tomapedidos.Logica
 
 
         //Cargar Notificaciones No Leídas
-        public List<Notificacion> GetUnreadNotifications(int idCliente)
+        public List<Notificacion> TraerNotificaciones(int idCliente)
         {
             List<Notificacion> notifications = new List<Notificacion>();
 
@@ -85,7 +85,7 @@ namespace Tomapedidos.Logica
 
                 public void DisplayUnreadNotifications(int userId)
                 {
-                    var notifications = GetUnreadNotifications(userId);
+                    var notifications = TraerNotificaciones(userId);
 
                     foreach (var notification in notifications)
                     {

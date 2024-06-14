@@ -161,7 +161,7 @@
             this.dgvPedido.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPedido.GridColor = System.Drawing.Color.White;
             this.dgvPedido.Location = new System.Drawing.Point(25, 342);
-            this.dgvPedido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvPedido.Margin = new System.Windows.Forms.Padding(2);
             this.dgvPedido.Name = "dgvPedido";
             this.dgvPedido.RowHeadersWidth = 51;
             this.dgvPedido.RowTemplate.Height = 24;
@@ -228,7 +228,7 @@
             this.Guardador_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Guardador_1.ForeColor = System.Drawing.Color.White;
             this.Guardador_1.Location = new System.Drawing.Point(344, 610);
-            this.Guardador_1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Guardador_1.Margin = new System.Windows.Forms.Padding(2);
             this.Guardador_1.Name = "Guardador_1";
             this.Guardador_1.Size = new System.Drawing.Size(22, 24);
             this.Guardador_1.TabIndex = 2;
@@ -243,7 +243,7 @@
             this.Guardador_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Guardador_2.ForeColor = System.Drawing.Color.White;
             this.Guardador_2.Location = new System.Drawing.Point(344, 637);
-            this.Guardador_2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Guardador_2.Margin = new System.Windows.Forms.Padding(2);
             this.Guardador_2.Name = "Guardador_2";
             this.Guardador_2.Size = new System.Drawing.Size(22, 24);
             this.Guardador_2.TabIndex = 3;
@@ -258,7 +258,7 @@
             this.Guardador_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Guardador_3.ForeColor = System.Drawing.Color.White;
             this.Guardador_3.Location = new System.Drawing.Point(344, 665);
-            this.Guardador_3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Guardador_3.Margin = new System.Windows.Forms.Padding(2);
             this.Guardador_3.Name = "Guardador_3";
             this.Guardador_3.Size = new System.Drawing.Size(22, 24);
             this.Guardador_3.TabIndex = 4;
@@ -273,7 +273,7 @@
             this.Guardador_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Guardador_4.ForeColor = System.Drawing.Color.White;
             this.Guardador_4.Location = new System.Drawing.Point(476, 610);
-            this.Guardador_4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Guardador_4.Margin = new System.Windows.Forms.Padding(2);
             this.Guardador_4.Name = "Guardador_4";
             this.Guardador_4.Size = new System.Drawing.Size(22, 24);
             this.Guardador_4.TabIndex = 5;
@@ -288,7 +288,7 @@
             this.Guardador_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Guardador_5.ForeColor = System.Drawing.Color.White;
             this.Guardador_5.Location = new System.Drawing.Point(476, 639);
-            this.Guardador_5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Guardador_5.Margin = new System.Windows.Forms.Padding(2);
             this.Guardador_5.Name = "Guardador_5";
             this.Guardador_5.Size = new System.Drawing.Size(22, 24);
             this.Guardador_5.TabIndex = 6;
@@ -371,13 +371,14 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(118, 75);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(173, 20);
             this.txtNombre.TabIndex = 17;
             // 
             // txtDireccion
             // 
+            this.txtDireccion.Enabled = false;
             this.txtDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.txtDireccion.Location = new System.Drawing.Point(118, 98);
             this.txtDireccion.Margin = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -388,7 +389,7 @@
             // txtTelefono
             // 
             this.txtTelefono.Location = new System.Drawing.Point(118, 52);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(173, 20);
             this.txtTelefono.TabIndex = 1;
@@ -402,7 +403,7 @@
             this.btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Guardar.ForeColor = System.Drawing.Color.White;
             this.btn_Guardar.Location = new System.Drawing.Point(25, 604);
-            this.btn_Guardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Guardar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Guardar.Name = "btn_Guardar";
             this.btn_Guardar.Size = new System.Drawing.Size(162, 37);
             this.btn_Guardar.TabIndex = 24;
@@ -480,7 +481,7 @@
             this.Guardador_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Guardador_6.ForeColor = System.Drawing.Color.White;
             this.Guardador_6.Location = new System.Drawing.Point(476, 666);
-            this.Guardador_6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Guardador_6.Margin = new System.Windows.Forms.Padding(2);
             this.Guardador_6.Name = "Guardador_6";
             this.Guardador_6.Size = new System.Drawing.Size(22, 24);
             this.Guardador_6.TabIndex = 30;
@@ -535,7 +536,7 @@
             this.btn_Limpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btn_Limpiar.ForeColor = System.Drawing.Color.White;
             this.btn_Limpiar.Location = new System.Drawing.Point(372, 304);
-            this.btn_Limpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Limpiar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Limpiar.Name = "btn_Limpiar";
             this.btn_Limpiar.Size = new System.Drawing.Size(88, 34);
             this.btn_Limpiar.TabIndex = 34;
@@ -576,7 +577,7 @@
             // 
             this.txtNovedad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNovedad.Location = new System.Drawing.Point(111, 295);
-            this.txtNovedad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNovedad.Margin = new System.Windows.Forms.Padding(2);
             this.txtNovedad.Multiline = true;
             this.txtNovedad.Name = "txtNovedad";
             this.txtNovedad.Size = new System.Drawing.Size(231, 43);
@@ -696,7 +697,7 @@
             // 
             this.btn_MenuLlamada.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_MenuLlamada.Location = new System.Drawing.Point(2, 2);
-            this.btn_MenuLlamada.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_MenuLlamada.Margin = new System.Windows.Forms.Padding(2);
             this.btn_MenuLlamada.Name = "btn_MenuLlamada";
             this.btn_MenuLlamada.Size = new System.Drawing.Size(32, 35);
             this.btn_MenuLlamada.TabIndex = 51;
@@ -720,7 +721,7 @@
             // 
             this.SubMenu.Controls.Add(this.btn_MenuLlamada);
             this.SubMenu.Location = new System.Drawing.Point(2, 0);
-            this.SubMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SubMenu.Margin = new System.Windows.Forms.Padding(2);
             this.SubMenu.Name = "SubMenu";
             this.SubMenu.Size = new System.Drawing.Size(458, 14);
             this.SubMenu.TabIndex = 54;
@@ -756,7 +757,7 @@
             this.btnSemaforo1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSemaforo1.ForeColor = System.Drawing.Color.White;
             this.btnSemaforo1.Location = new System.Drawing.Point(2, 18);
-            this.btnSemaforo1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSemaforo1.Margin = new System.Windows.Forms.Padding(2);
             this.btnSemaforo1.Name = "btnSemaforo1";
             this.btnSemaforo1.Size = new System.Drawing.Size(22, 24);
             this.btnSemaforo1.TabIndex = 57;
@@ -769,7 +770,7 @@
             this.btnSemaforo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSemaforo2.ForeColor = System.Drawing.Color.White;
             this.btnSemaforo2.Location = new System.Drawing.Point(26, 18);
-            this.btnSemaforo2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSemaforo2.Margin = new System.Windows.Forms.Padding(2);
             this.btnSemaforo2.Name = "btnSemaforo2";
             this.btnSemaforo2.Size = new System.Drawing.Size(22, 24);
             this.btnSemaforo2.TabIndex = 58;
@@ -782,7 +783,7 @@
             this.btnSemaforo3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSemaforo3.ForeColor = System.Drawing.Color.White;
             this.btnSemaforo3.Location = new System.Drawing.Point(50, 18);
-            this.btnSemaforo3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSemaforo3.Margin = new System.Windows.Forms.Padding(2);
             this.btnSemaforo3.Name = "btnSemaforo3";
             this.btnSemaforo3.Size = new System.Drawing.Size(22, 24);
             this.btnSemaforo3.TabIndex = 59;
@@ -795,7 +796,7 @@
             this.btnSemaforo4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSemaforo4.ForeColor = System.Drawing.Color.White;
             this.btnSemaforo4.Location = new System.Drawing.Point(74, 18);
-            this.btnSemaforo4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSemaforo4.Margin = new System.Windows.Forms.Padding(2);
             this.btnSemaforo4.Name = "btnSemaforo4";
             this.btnSemaforo4.Size = new System.Drawing.Size(22, 24);
             this.btnSemaforo4.TabIndex = 60;
@@ -860,7 +861,7 @@
             this.btnEnlaceWpp6.ForeColor = System.Drawing.Color.White;
             this.btnEnlaceWpp6.Image = ((System.Drawing.Image)(resources.GetObject("btnEnlaceWpp6.Image")));
             this.btnEnlaceWpp6.Location = new System.Drawing.Point(502, 666);
-            this.btnEnlaceWpp6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEnlaceWpp6.Margin = new System.Windows.Forms.Padding(2);
             this.btnEnlaceWpp6.Name = "btnEnlaceWpp6";
             this.btnEnlaceWpp6.Size = new System.Drawing.Size(22, 24);
             this.btnEnlaceWpp6.TabIndex = 68;
@@ -876,7 +877,7 @@
             this.btnEnlaceWpp5.ForeColor = System.Drawing.Color.White;
             this.btnEnlaceWpp5.Image = ((System.Drawing.Image)(resources.GetObject("btnEnlaceWpp5.Image")));
             this.btnEnlaceWpp5.Location = new System.Drawing.Point(502, 638);
-            this.btnEnlaceWpp5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEnlaceWpp5.Margin = new System.Windows.Forms.Padding(2);
             this.btnEnlaceWpp5.Name = "btnEnlaceWpp5";
             this.btnEnlaceWpp5.Size = new System.Drawing.Size(22, 24);
             this.btnEnlaceWpp5.TabIndex = 67;
@@ -892,7 +893,7 @@
             this.btnEnlaceWpp4.ForeColor = System.Drawing.Color.White;
             this.btnEnlaceWpp4.Image = ((System.Drawing.Image)(resources.GetObject("btnEnlaceWpp4.Image")));
             this.btnEnlaceWpp4.Location = new System.Drawing.Point(502, 610);
-            this.btnEnlaceWpp4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEnlaceWpp4.Margin = new System.Windows.Forms.Padding(2);
             this.btnEnlaceWpp4.Name = "btnEnlaceWpp4";
             this.btnEnlaceWpp4.Size = new System.Drawing.Size(22, 24);
             this.btnEnlaceWpp4.TabIndex = 66;
@@ -908,7 +909,7 @@
             this.btnEnlaceWpp3.ForeColor = System.Drawing.Color.White;
             this.btnEnlaceWpp3.Image = ((System.Drawing.Image)(resources.GetObject("btnEnlaceWpp3.Image")));
             this.btnEnlaceWpp3.Location = new System.Drawing.Point(370, 665);
-            this.btnEnlaceWpp3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEnlaceWpp3.Margin = new System.Windows.Forms.Padding(2);
             this.btnEnlaceWpp3.Name = "btnEnlaceWpp3";
             this.btnEnlaceWpp3.Size = new System.Drawing.Size(22, 24);
             this.btnEnlaceWpp3.TabIndex = 65;
@@ -924,7 +925,7 @@
             this.btnEnlaceWpp2.ForeColor = System.Drawing.Color.White;
             this.btnEnlaceWpp2.Image = ((System.Drawing.Image)(resources.GetObject("btnEnlaceWpp2.Image")));
             this.btnEnlaceWpp2.Location = new System.Drawing.Point(370, 637);
-            this.btnEnlaceWpp2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEnlaceWpp2.Margin = new System.Windows.Forms.Padding(2);
             this.btnEnlaceWpp2.Name = "btnEnlaceWpp2";
             this.btnEnlaceWpp2.Size = new System.Drawing.Size(22, 24);
             this.btnEnlaceWpp2.TabIndex = 64;
@@ -940,7 +941,7 @@
             this.btnEnlaceWpp1.ForeColor = System.Drawing.Color.White;
             this.btnEnlaceWpp1.Image = ((System.Drawing.Image)(resources.GetObject("btnEnlaceWpp1.Image")));
             this.btnEnlaceWpp1.Location = new System.Drawing.Point(370, 610);
-            this.btnEnlaceWpp1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEnlaceWpp1.Margin = new System.Windows.Forms.Padding(2);
             this.btnEnlaceWpp1.Name = "btnEnlaceWpp1";
             this.btnEnlaceWpp1.Size = new System.Drawing.Size(22, 24);
             this.btnEnlaceWpp1.TabIndex = 63;
@@ -952,7 +953,7 @@
             this.btn_Eliminar.Image = global::Tomapedidos.Properties.Resources.EliminarCirculo;
             this.btn_Eliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Eliminar.Location = new System.Drawing.Point(580, 304);
-            this.btn_Eliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Eliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Eliminar.Name = "btn_Eliminar";
             this.btn_Eliminar.Size = new System.Drawing.Size(73, 34);
             this.btn_Eliminar.TabIndex = 22;
@@ -970,7 +971,7 @@
             this.btn_Buscar.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Buscar.Image = global::Tomapedidos.Properties.Resources.buscar;
             this.btn_Buscar.Location = new System.Drawing.Point(-1, 48);
-            this.btn_Buscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Buscar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Buscar.Name = "btn_Buscar";
             this.btn_Buscar.Size = new System.Drawing.Size(37, 24);
             this.btn_Buscar.TabIndex = 2;
@@ -983,7 +984,7 @@
             this.btn_Agregar.Image = global::Tomapedidos.Properties.Resources.AgregarCirculo;
             this.btn_Agregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Agregar.Location = new System.Drawing.Point(492, 305);
-            this.btn_Agregar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Agregar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Agregar.Name = "btn_Agregar";
             this.btn_Agregar.Size = new System.Drawing.Size(84, 33);
             this.btn_Agregar.TabIndex = 3;
@@ -1232,7 +1233,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TomaPedido";
             this.Text = "Toma Pedido La Bodega De Nacho";
             this.Load += new System.EventHandler(this.TomaPedido_Load);

@@ -7,6 +7,11 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
+using Newtonsoft.Json;
+using Microsoft.VisualBasic;
+using System.Windows.Forms;
+using System.Collections;
 
 namespace Tomapedidos.Logica
 {
@@ -30,12 +35,16 @@ namespace Tomapedidos.Logica
                 using (OleDbConnection conexion = new OleDbConnection(cn.ConexionXpos()))
                 {
                     conexion.Open();
-                    string query = "SELECT *" +
+                    string query = "SELECT (strDireccion) as Direccion,(strIDCliente) as IdCliente, (strTelefono) as Telefono1, (strCelular) as Telefono2, (strTelefonoOficina) as Telefono3,(strWhatsapp) as Telefono4, (strEmpresa) AS NombreCompleto," +
+                                   " (strNit) as Documento, (strCiudad) as Ciudad, (dtmNacimiento) as Nacimiento, (strTipoCliente) As IdCategoria, (lngPuntosAcumulados) as Puntos, (strmail) as Correo, (blnperjuridica) as EsPersonaJuridica," +
+                                   " bytTipoDocumento, (strRazonSocial) as RazonSocial, (strNombre1) As Nombre1, (strNombre2) as Nombre2,(strApellido1) as Apellido1, (strApellido2) as Apelllido2," +
+                                   " (blnRegimenComun) as EsRegimenComun, (dtmFechaCreoCliente) As FechaCreacion, (lngMesUltimaFactura) As FechaUltCompra" +
                                    " FROM tblCliente" +
                                    " where strIDCliente like '%" + documento + "%'" +
                                    " or strNit like '%" + documento + "%'" +
                                    " or strEmpresa like '%" + documento + "%'" +
-                                   " or strRazonSocial like '%" + documento + "%'";
+                                   " or strRazonSocial like '%" + documento + "%'" +
+                                   " or strDireccion like '%" + documento + "%'";
 
                     using (OleDbDataAdapter adapter = new OleDbDataAdapter(query, conexion))
                     {
@@ -66,13 +75,13 @@ namespace Tomapedidos.Logica
 
             query = "insert into tblCliente (strIdCliente,strEmpresa,strTelefono,strNit,strCiudad,strTipoCliente," +
                     "strDireccion,blnperjuridica,bytTipoDocumento,bytDigitoVerificacion,strRazonSocial," +
-                    "bytTipoDireccion,blnRegimenComun,bytRegimen,lngCodigoMunicipio,strWeb,strEmailContactoFE,strEmailEntregaFE," +
+                    "bytTipoDireccion,blnRegimenComun,bytRegimen,lngCodigoMunicipio,strmail,strEmailContactoFE,strEmailEntregaFE," +
                     "blnImpoconsumoEnVenta,strIdUrbanaRural,strNroDocumento," +
                    "dtmFechaCreoCliente,dtmFechaCreoReferenciaPer1," +
                     "bytFacturaIVA,lngCodigoPais,strUsuarioCreoCliente,lngIDCajaCreoCliente,blnFE)" +
                     " values(@strIdCliente,@strEmpresa,@strTelefono,@strNit,@strCiudad,@strTipoCliente,@strDireccion,@blnperjuridica," +
                     "@bytTipoDocumento,@bytDigitoVerificacion,@strRazonSocial,@bytTipoDireccion,@blnRegimenComun,@bytRegimen,@lngCodigoMunicipio," +
-                    "@strWeb,@strEmailContactoFE,@strEmailEntregaFE,@blnImpoconsumoEnVenta,@strIdUrbanaRural," +
+                    "@strmail,@strEmailContactoFE,@strEmailEntregaFE,@blnImpoconsumoEnVenta,@strIdUrbanaRural," +
                     "@strNroDocumento," +
                     "@dtmFechaCreoCliente,@dtmFechaCreoReferenciaPer1," +
                     "@bytFacturaIVA,@lngCodigoPais," +
@@ -105,9 +114,9 @@ namespace Tomapedidos.Logica
                     cmd.Parameters.AddWithValue("@blnRegimenComun", -1 * Convert.ToInt16(obj.blnRegimenComun));
                     cmd.Parameters.AddWithValue("@bytRegimen", obj.bytRegimen);
                     cmd.Parameters.AddWithValue("@lngCodigoMunicipio", obj.lngCodigoMunicipio);
-                    cmd.Parameters.AddWithValue("@strWeb", obj.strWeb);
-                    cmd.Parameters.AddWithValue("@strEmailContactoFE", obj.strWeb);
-                    cmd.Parameters.AddWithValue("@strEmailEntregaFE", obj.strWeb);
+                    cmd.Parameters.AddWithValue("@strmail", obj.strmail);
+                    cmd.Parameters.AddWithValue("@strEmailContactoFE", obj.strmail);
+                    cmd.Parameters.AddWithValue("@strEmailEntregaFE", obj.strmail);
                     cmd.Parameters.AddWithValue("@blnImpoconsumoEnVenta", -1 * Convert.ToInt16(obj.blnImpoconsumoEnVenta));
                     cmd.Parameters.AddWithValue("@strIdUrbanaRural", obj.strIdUrbanaRural);
                     cmd.Parameters.AddWithValue("@strNroDocumento", obj.strNroDocumento);
@@ -146,17 +155,17 @@ namespace Tomapedidos.Logica
 
             query = "insert into tblCliente (strNombre1,strApellido1,strIdCliente,strEmpresa,strTelefono,strCiudad,strTipoCliente," +
                      "strDireccion,blnperjuridica,bytTipoDocumento," +
-                     "bytTipoDireccion,blnRegimenComun,bytRegimen,lngCodigoMunicipio,strWeb,strEmailContactoFE,strEmailEntregaFE," +
+                     "bytTipoDireccion,blnRegimenComun,bytRegimen,lngCodigoMunicipio,strmail,strEmailContactoFE,strEmailEntregaFE," +
                      "blnImpoconsumoEnVenta,strIdUrbanaRural,strNroDocumento," +
                     "dtmFechaCreoCliente,dtmFechaCreoReferenciaPer1," +
-                     "bytFacturaIVA,lngCodigoPais,strUsuarioCreoCliente,lngIDCajaCreoCliente,blnFE)" +
+                     "bytFacturaIVA,lngCodigoPais,strUsuarioCreoCliente,lngIDCajaCreoCliente,blnFE,dtmNacimiento)" +
                      " values(@strNombre1,@strApellido1,@strIdCliente,@strEmpresa,@strTelefono,@strCiudad,@strTipoCliente,@strDireccion,@blnperjuridica," +
                      "@bytTipoDocumento,@bytTipoDireccion,@blnRegimenComun,@bytRegimen,@lngCodigoMunicipio," +
-                     "@strWeb,@strEmailContactoFE,@strEmailEntregaFE,@blnImpoconsumoEnVenta,@strIdUrbanaRural," +
+                     "@strmail,@strEmailContactoFE,@strEmailEntregaFE,@blnImpoconsumoEnVenta,@strIdUrbanaRural," +
                      "@strNroDocumento," +
                      "@dtmFechaCreoCliente,@dtmFechaCreoReferenciaPer1," +
                      "@bytFacturaIVA,@lngCodigoPais," +
-                     "@strUsuarioCreoCliente,@lngIDCajaCreoCliente,@blnFE)";
+                     "@strUsuarioCreoCliente,@lngIDCajaCreoCliente,@blnFE,@dtmNacimiento)";
 
 
             try
@@ -184,9 +193,9 @@ namespace Tomapedidos.Logica
                     cmd.Parameters.AddWithValue("@blnRegimenComun", -1 * Convert.ToInt16(obj.blnRegimenComun));
                     cmd.Parameters.AddWithValue("@bytRegimen", obj.bytRegimen);
                     cmd.Parameters.AddWithValue("@lngCodigoMunicipio", obj.lngCodigoMunicipio);
-                    cmd.Parameters.AddWithValue("@strWeb", obj.strWeb);
-                    cmd.Parameters.AddWithValue("@strEmailContactoFE", obj.strWeb);
-                    cmd.Parameters.AddWithValue("@strEmailEntregaFE", obj.strWeb);
+                    cmd.Parameters.AddWithValue("@strmail", obj.strmail);
+                    cmd.Parameters.AddWithValue("@strEmailContactoFE", obj.strmail);
+                    cmd.Parameters.AddWithValue("@strEmailEntregaFE", obj.strmail);
                     cmd.Parameters.AddWithValue("@blnImpoconsumoEnVenta", -1 * Convert.ToInt16(obj.blnImpoconsumoEnVenta));
                     cmd.Parameters.AddWithValue("@strIdUrbanaRural", obj.strIdUrbanaRural);
                     cmd.Parameters.AddWithValue("@strNroDocumento", obj.strNroDocumento);
@@ -196,6 +205,7 @@ namespace Tomapedidos.Logica
                     cmd.Parameters.AddWithValue("@lngCodigoPais", obj.lngCodigoPais);
                     cmd.Parameters.AddWithValue("@strUsuarioCreoCliente", obj.strUsuarioCreoCliente);
                     cmd.Parameters.AddWithValue("@lngIDCajaCreoCliente", obj.lngIDCajaCreoCliente);
+                    cmd.Parameters.AddWithValue("@dtmNacimiento", obj.dtmNacimiento) ;
                     cmd.Parameters.AddWithValue("@blnFE", -1 * Convert.ToInt16(obj.blnFE));
 
                     cmd.ExecuteNonQuery();
@@ -216,19 +226,97 @@ namespace Tomapedidos.Logica
             return respuesta;
         }
 
-        public bool ActualizarCliente(string Telefono)
+
+        /*,
+            update tblCliente set,
+            strNombre1 = @strNombre1,
+            strApellido1 = @strApellido1,
+            blnperjuridica = @blnperjuridica,
+            strRazonSocial = @strRazonSocial,
+            blnperjuridica = @blnperjuridica,
+            strNit = @strNit,
+            Telefono = @Telefono,
+            Telefono2 = @Telefono2,
+            Telefono3 = @Telefono3,
+            Telefono4 = @Telefono4,
+            strDireccion  = @strDireccion,
+            strmail = @strmail,
+            strEmailContactoFE = @strmail,
+            strEmailEntregaFE = @strmail,
+            dtmNacimiento= @dtmNacimiento,
+            where strIdCliente = @strIdCliente,
+         
+         */
+
+        
+        public bool ActualizarCliente(Cliente obj)
         {
-            string query = "UPDATE tblCliente set strApellido1 = 1,strCiudad = 'MEDELLÍN',strTipoCliente = '1',lngCodigoPais = 1," +
-                           "bytFacturaIVA = 1" +
-                           "strNroDocumento = '222222222222', strIdUrbanaRural = 'U'" +
-                           "strWeb = 'labodegadenacho@hotmail.com'," +
-                           "strEmailContactoFE = 'labodegadenacho@hotmail.com'" +
-                           "strEmailEntregaFE = 'labodegadenacho@hotmail.com'" +
-                           " where strIdCliente = '" + Telefono + "'";
+            CONEXION con = new CONEXION();
+
+            List<string> listaDeQueries = new List<string> ();
+
+            string inicio = "UPDATE tblCliente SET ";
+            string fin = " Where strIdCliente = '" + obj.strIdCliente + "'";
+
+
+            string text1 = inicio + "strNombre1 = " + "'" + obj.strNombre1 + "'" + fin;
+            string text2 = inicio + "strApellido1 = " + "'" + obj.strApellido1 + "'" +  fin;
+            string text3 = inicio + "blnperjuridica = " + obj.blnperjuridica + fin;
+            string text4 = inicio + "strRazonSocial = " + "'" + obj.strRazonSocial + "'" + fin;
+            string text5 = inicio + "strNit = " + "'" + obj.strNit + "'" + fin;
+            string text6 = inicio + "strTelefono = " + "'" + obj.Telefono + "'" + fin;
+            string text7 = inicio + "strCelular = " + "'" + obj.Telefono2 + "'" + fin;
+            string text8 = inicio + "strTelefonoOficina = " + "'" + obj.Telefono3 + "'" + fin;
+            string text9 = inicio + "strWhatsapp = " + "'" + obj.Telefono4 + "'" + fin;
+            string text10 = inicio + "strDireccion = " + "'" + obj.strDireccion + "'" + fin;
+            string text11 = inicio + "strmail = " + "'" + obj.strmail + "'" + fin;
+            string text12 = inicio + "strEmailContactoFE = " + "'" + obj.strmail + "'" + fin;
+            string text13 = inicio + "strEmailEntregaFE = " + "'" + obj.strmail + "'" + fin;
+            string text14 = inicio + "dtmNacimiento = " + "'" + obj.dtmNacimiento + "'" + fin;
+          
+
+            listaDeQueries.Add(text1);
+            listaDeQueries.Add(text2);
+            listaDeQueries.Add(text3);
+            listaDeQueries.Add(text4);
+            listaDeQueries.Add(text5);
+            listaDeQueries.Add(text6);
+            listaDeQueries.Add(text7);
+            listaDeQueries.Add(text8);
+            listaDeQueries.Add(text9);
+            listaDeQueries.Add(text10);
+            listaDeQueries.Add(text11);
+            listaDeQueries.Add(text12);
+            listaDeQueries.Add(text13);
+            listaDeQueries.Add(text14);
+           
+
+
+            try
+            {
+                using (OleDbConnection conexion = new OleDbConnection(con.ConexionXpos()))
+                {
+                    conexion.Open();
+
+                    foreach (var item in listaDeQueries)
+                    {
+                        OleDbCommand cmd = new OleDbCommand(item, conexion);
+                        cmd.ExecuteNonQuery();
+                    }
+                   
+                }
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
+            
+                            
 
 
 
-            return false;
+            return true;
         }
     }
 }

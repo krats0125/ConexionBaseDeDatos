@@ -112,6 +112,7 @@ namespace ConexionBaseDeDatos.Presentacion
             //abrirFormulario(new Frm_Configuracion());
 
             AbrirFormularioEnPanel<Frm_Configuracion>();
+            AbrirFormularioEnPanel<Frm_Configuracion>();
         }
 
         private void tomaPedidoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -119,10 +120,12 @@ namespace ConexionBaseDeDatos.Presentacion
             //abrirFormulario(new TomaPedido());
 
             AbrirFormularioEnPanel<TomaPedido>();
+            AbrirFormularioEnPanel<TomaPedido>();
         }
 
         private void buscarVentasToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            AbrirFormularioEnPanel<Frm_BuscarVentas>();
             AbrirFormularioEnPanel<Frm_BuscarVentas>();
         }
 
@@ -135,22 +138,29 @@ namespace ConexionBaseDeDatos.Presentacion
 
         private void busToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AbrirFormularioEnPanel<Frm_Clientes>();
+           
+            //AbrirFormularioEnPanel<Frm_Clientes>();
+
+            Frm_Clientes frm = new Frm_Clientes();
+            frm.Show();
         }
 
         private void clientesPaginaWebToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            AbrirFormularioEnPanel<Frm_ClientesWeb>();
             AbrirFormularioEnPanel<Frm_ClientesWeb>();
         }
 
         private void mensajesPQRSToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AbrirFormularioEnPanel<FrmMensajesWeb>();
+            AbrirFormularioEnPanel<FrmMensajesWeb>();
 
         }
 
         private void FormularioAsesoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            AbrirFormularioEnPanel<Frm_Asesores>();
             AbrirFormularioEnPanel<Frm_Asesores>();
         }
 

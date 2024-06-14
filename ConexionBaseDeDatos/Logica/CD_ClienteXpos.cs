@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ConexionBaseDeDatos.Modelos;
+using static TheArtOfDevHtmlRenderer.Adapters.RGraphicsPath;
 
 namespace ConexionBaseDeDatos.Logica
 {
@@ -20,10 +21,11 @@ namespace ConexionBaseDeDatos.Logica
            5) Traer Hora promedio de compra
            6) Traer ticker promedio de compra
            7) traer ultima Factura
+           8) Actualizar dirección
         */
 
 
-
+        // metodo 1: Buscar Cliente  por telefonos
         public async Task<Cliente> BuscarTelefono(string buscado)
         {
             Cliente ocliente = new Cliente();
@@ -84,7 +86,7 @@ namespace ConexionBaseDeDatos.Logica
             return ocliente;
 
         }
-
+         //4) TaerProductosPreferidosCliente
         public async Task TaerProductosPreferidosCliente(string cliente,DataGridView tabla)
         {
             DataTable preferidos = new DataTable();
@@ -134,25 +136,47 @@ namespace ConexionBaseDeDatos.Logica
             
         }
 
-        public async Task<bool> ActualizarNombreYDireccion(Cliente oCliente) 
+        public async Task<bool> ActualizarDireccionCliente(Cliente oCliente) 
         {
             CONEXION cn = new CONEXION();
 
             try
             {
-                string query = $"UPDATE tblCliente set strEmpresa = @Nombre, strDireccion = @Direccion where strIDCliente = @IdCliente";
-                    
 
                 using (OleDbConnection connection = new OleDbConnection(cn.ConexionXpos()))
                 {
                     await connection.OpenAsync();
-                    OleDbCommand cmd = new OleDbCommand(query, connection);
-                    cmd.Parameters.AddWithValue("@Nombre", oCliente.Nombre);
-                    cmd.Parameters.AddWithValue("@Direccion", oCliente.Direccion);
-                    cmd.Parameters.AddWithValue("@IdCliente", oCliente.IdCliente);
-                    await cmd.ExecuteNonQueryAsync();
-                }
 
+                    // Paso 1: Buscar si la nueva dirección ya está asignada a algún cliente
+
+                    string buscarDireccionQuery = "SELECT strIdCliente FROM tblCliente WHERE strDireccion = @nuevaDireccion";
+                    OleDbCommand buscarDireccionCommand = new OleDbCommand(buscarDireccionQuery, connection);
+                    buscarDireccionCommand.Parameters.AddWithValue("@nuevaDireccion", oCliente.Direccion);
+
+                    object resultado = buscarDireccionCommand.ExecuteScalar();
+
+                    if (resultado != null) // si se encuentra un cliente con esa direccion entra en el proceso de cambiar la direccion del otro cliente
+                    {
+                        string idClienteAnterior = (resultado.ToString());
+
+                        // Paso 2: Actualizar dirección del cliente anterior a "Sin Dirección"
+                        string actualizarDireccionQuery = "UPDATE tblCliente SET strDireccion = 'Sin Dirección' WHERE strIdCliente = @idClienteAnterior";
+                        OleDbCommand actualizarDireccionCommand = new OleDbCommand(actualizarDireccionQuery, connection);
+                        actualizarDireccionCommand.Parameters.AddWithValue("@idClienteAnterior", idClienteAnterior);
+                        await actualizarDireccionCommand.ExecuteNonQueryAsync();
+                    }
+
+                    // Paso 3: Actualizar el cliente actual con la nueva dirección
+                    string actualizarClienteQuery = "UPDATE tblCliente SET strDireccion = @nuevaDireccion WHERE strIdCliente = @idClienteActual";
+                    OleDbCommand actualizarClienteCommand = new OleDbCommand(actualizarClienteQuery, connection);
+
+                    //-> aun no se se usa por que si cambia el nombre, tambien deberia cambiar un apellido y por ende el nombre completo
+                    //actualizarClienteCommand.Parameters.AddWithValue("@nombre", oCliente.Nombre);  
+                    actualizarClienteCommand.Parameters.AddWithValue("@nuevaDireccion", oCliente.Direccion);
+                    actualizarClienteCommand.Parameters.AddWithValue("@idClienteActual", oCliente.IdCliente);
+                    await actualizarClienteCommand.ExecuteNonQueryAsync();
+                }
+               
             }
             catch (Exception ex)
             {
@@ -166,7 +190,56 @@ namespace ConexionBaseDeDatos.Logica
         }
 
 
-        
+        #region Actualizacion de cliente
+        private async Task<bool> actualizarClienteDireccion(Cliente oCliente)
+        {
+            CONEXION cn = new CONEXION();
+            try
+            {
+                using (OleDbConnection connection = new OleDbConnection(cn.ConexionXpos()))
+                {
+                    await connection.OpenAsync();
+
+                    // Paso 1: Buscar si la nueva dirección ya está asignada a algún cliente
+                    string buscarDireccionQuery = "SELECT strIdCliente FROM tbl_cliente WHERE strDireccion = @nuevaDireccion";
+                    OleDbCommand buscarDireccionCommand = new OleDbCommand(buscarDireccionQuery, connection);
+                    buscarDireccionCommand.Parameters.AddWithValue("@nuevaDireccion", oCliente.Direccion);
+
+                    object resultado = buscarDireccionCommand.ExecuteScalar();
+
+                    if (resultado != null)
+                    {
+                        int idClienteAnterior = Convert.ToInt32(resultado);
+
+                        // Paso 2: Actualizar dirección del cliente anterior a "Sin Dirección"
+                        string actualizarDireccionQuery = "UPDATE tbl_cliente SET strDireccion = 'Sin Dirección' WHERE strIdCliente = @idClienteAnterior";
+                        OleDbCommand actualizarDireccionCommand = new OleDbCommand(actualizarDireccionQuery, connection);
+                        actualizarDireccionCommand.Parameters.AddWithValue("@idClienteAnterior", idClienteAnterior);
+                        await actualizarDireccionCommand.ExecuteNonQueryAsync();
+                    }
+
+                    // Paso 3: Actualizar el cliente actual con la nueva dirección
+                    string actualizarClienteQuery = "UPDATE tbl_cliente SET strNombre = @nombre, strDireccion = @nuevaDireccion, strTelefono = @telefono, strCorreo = @correo WHERE strIdCliente = @idClienteActual";
+                    OleDbCommand actualizarClienteCommand = new OleDbCommand(actualizarClienteQuery, connection);
+                    actualizarClienteCommand.Parameters.AddWithValue("@nombre", oCliente.Nombre);
+                    actualizarClienteCommand.Parameters.AddWithValue("@nuevaDireccion", oCliente.Direccion);
+                    actualizarClienteCommand.Parameters.AddWithValue("@telefono", oCliente.Telefono);
+                    actualizarClienteCommand.Parameters.AddWithValue("@correo", oCliente.Nombre); //    <------ modificar el correo
+                    actualizarClienteCommand.Parameters.AddWithValue("@idClienteActual", oCliente.Direccion);
+                    await actualizarClienteCommand.ExecuteNonQueryAsync();
+                }
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
+
+            return true;
+        }
+        #endregion
+
+
         /*
                  private async Task BuscarTelefono(string buscado)
         {
@@ -220,5 +293,9 @@ namespace ConexionBaseDeDatos.Logica
         }
          
          */ // codigo asincrono de busar el telefono
+
+
+
+
     }
 }

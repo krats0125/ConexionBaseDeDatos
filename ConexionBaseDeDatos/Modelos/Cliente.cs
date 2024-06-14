@@ -48,10 +48,14 @@ namespace ConexionBaseDeDatos.Modelos
         public int lngIDCajaCreoCliente { get; set; }
         public bool blnFE { get; set; } = true;
 
+        public string strmail { get; set; }
+
         public string strNombre1 { get; set; } // Primer Nombre
         public string strApellido1 { get; set; } // Primer Apellido
 
         public string dtmFechaUltimaCompra { get; set; } // Fecha de la ultima compra
+
+        public string dtmNacimiento { get; set; }
 
 
     }

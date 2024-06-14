@@ -149,6 +149,7 @@ namespace ConexionBaseDeDatos.Logica
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 respuesta = false;
                 //MessageBox.Show("Excepción: " + ex.Message);
             }

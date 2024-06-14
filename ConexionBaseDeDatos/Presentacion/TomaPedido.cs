@@ -25,6 +25,7 @@ using Microsoft.VisualBasic;
 using ConexionBaseDeDatos.Utilitarios;
 using System.Web.UI.WebControls;
 using Tomapedidos.Logica;
+using ConexionBaseDeDatos.Presentacion.Clientes;
 
 namespace ConexionBaseDeDatos
 {
@@ -138,6 +139,7 @@ namespace ConexionBaseDeDatos
 
         private async void btn_Buscar_Click(object sender, EventArgs e)
         {
+            
             lbMensajeProcesando.Visible = true;
             
 
@@ -148,22 +150,24 @@ namespace ConexionBaseDeDatos
             CD_ClienteXpos cliente = new CD_ClienteXpos();
             if(telefonoBuscado != "")
             {
-               Cliente ocliente = new Cliente();
+                Cliente ocliente = new Cliente();
 
                 ocliente = await Task.Run(() => cliente.BuscarTelefono(telefonoBuscado));
+                if (ocliente != null)
+                {
+                    txtDireccion.Text = ocliente.Direccion;
+                    txtNombre.Text = ocliente.Nombre;
+                    Lb_IdCliente.Text = ocliente.IdCliente;
+                    Lb_UltimaCompra.Text = ocliente.dtmFechaUltimaCompra;
 
-                txtDireccion.Text = ocliente.Direccion;
-                txtNombre.Text = ocliente.Nombre;
-                Lb_IdCliente.Text = ocliente.IdCliente;
-                Lb_UltimaCompra.Text = ocliente.dtmFechaUltimaCompra;
+                }
+                
                 if (Lb_IdCliente.Text != "")
                 {
-                    //DataTable dt = new DataTable();
-                    //dt = await cliente.TaerProductosPreferidosCliente(Lb_IdCliente.Text);
-                    // dgvPreferidosCliente.DataSource = dt;
-
+                
                    await Task.Run(async () => await cliente.TaerProductosPreferidosCliente(ocliente.IdCliente, dgvPreferidosCliente));
-                    CD_Saldos saldito = new CD_Saldos();
+                   CD_Saldos saldito = new CD_Saldos();
+
                    //await Task.Run(async () => await saldito.BuscarSaldoPendienteDelCliente(ocliente.IdCliente));
                 }
                
@@ -177,6 +181,8 @@ namespace ConexionBaseDeDatos
                 {
                     seHaBuscado = false;
 
+                    Frm_Clientes frm = new Frm_Clientes(telefonoBuscado);
+                    frm.ShowDialog();
 
                 }
               
@@ -194,17 +200,25 @@ namespace ConexionBaseDeDatos
 
             btn_Guardar.Enabled = false;
 
-
-            DialogResult seEnvia = MessageBox.Show("Ya verificamos el pedido, Seguro(a)?", "Seleccione Medio",
-            MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
-
-            if (seEnvia == DialogResult.Yes)
+            if (ValidacionCampos())
             {
-                ValidacionCampos();
-                await Enviar();
-                btn_Guardar.Enabled = true;
+                DialogResult seEnvia = MessageBox.Show("Ya verificamos el pedido, Seguro(a)?", "Seleccione Medio",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
+
+                if (seEnvia == DialogResult.Yes)
+                {
+                                       
+                    await Enviar();
+                                         
+                    btn_Guardar.Enabled = true;
+                }
+                else if (seEnvia == DialogResult.No)
+                {
+                    btn_Guardar.Enabled = true;
+                    return;
+                }
             }
-            else if (seEnvia == DialogResult.No)
+            else 
             {
                 btn_Guardar.Enabled = true;
                 return;
@@ -213,19 +227,26 @@ namespace ConexionBaseDeDatos
             btn_Guardar.Enabled = true;
         }
 
-        private void ValidacionCampos()
+        private bool ValidacionCampos()
         {
-
+           
             if (txtTelefono.Text == "" && chkAnexo.Checked != true)
             {
                 MessageBox.Show("El Campo del telefono no puede estar vacio");
-                return;
+                return false;
+            }
+
+            if (txtDireccion.Text == "" && chkAnexo.Checked != true)
+            {
+                MessageBox.Show("El Campo de la dirección no puede estar vacio");
+                return false;
             }
 
             if (cb_MedioPedido.Text == "" && chkAnexo.Checked != true)
             {
 
-                DialogResult result = MessageBox.Show("¿Por qué medio realizó el pedido? si) Telefono y No) Whatsapp", "Seleccione Medio",
+                DialogResult result = MessageBox.Show("¿Por qué medio realizó el pedido? \r\n SI ) Telefono \r\n NO ) Whatsapp", "Seleccione Medio",
+
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
 
                 if (result == DialogResult.Yes)
@@ -236,15 +257,14 @@ namespace ConexionBaseDeDatos
                 {
                     cb_MedioPedido.Text = "WHATS´APP";
                 }
-
-
-                MessageBox.Show("El medio del pedido no puede estar vacio, elije entre Telefono o Whastapp");
-
+                               
             }
 
-            //VerificarCambios(); // este metodo asincrono  lo uso para actualizar los datos de los clientes.  solo el campo direccion y Nombre
+           
 
-            
+            VerificarCambios(); // este metodo asincrono  lo uso para actualizar los datos de los clientes.  solo el campo direccion y Nombre
+
+            return true;
 
 
         }
@@ -1194,50 +1214,38 @@ namespace ConexionBaseDeDatos
             if (seHaBuscado) // seHaBuscado es una variable que se utilliza para ver si recien realice una busqueda. y esto confirma que se trajo los datos de un cliente registrado
             {
                 // se revisa su hubo algun cambio en los datos que se trajeron inicialmente. 
-                if (txtNombre.Text != nombreOriginal || txtDireccion.Text != direccionOriginal)
+
+                          
+                if (txtDireccion.Text != direccionOriginal)
                 {
 
-                    //  se debe proceder a buscar si la direccion que se puso ya esta creada en el sistema 
+                    DialogResult result = MessageBox.Show("¿Desea actualizar la Direccion del cliente? \r\n" +
+                                                           "SI ) Actualizar \r\n" +
+                                                           "NO ) Solo por hoy", "Confirmar Actualización", MessageBoxButtons.YesNo);
 
-                    /*
-                     - De estar creada la dirección, que debe revisar si hay un campo libre de la direccion en los campos de los telefonos,
-                    y si lo hay agregar el numero al campo del telefono... ¿pero que pasa con la direccion que estaba ocupando anterioirmente 
-                    nuestro cliente ?- despues de ingresar el dato a la direccion y liego eliminar el telefono de la direccion
-                    {
-                    caso: el  hombre de la casa ya no quiere vivir con los papas, y por lo tanti decide vivir en otro apartamento pero cerca del
-                    apartamento de los padres...
-                    
-                    }
-                     
-                    otra de las opciones es que se borre todos los numeros de la direccion anterior. suponiendo que todo el grupo familiar se cambio
-                    de casa.
-
-                     
-                     
-                     
-                     */
-
-                    DialogResult result = MessageBox.Show("¿Desea actualizar el Nombre y la Direccion del cliente?", "Confirmar Actualización", MessageBoxButtons.YesNo);
                     if (result == DialogResult.Yes)
                     {
                         Cliente ocliente = new Cliente();
                         ocliente.IdCliente = Lb_IdCliente.Text;
-                        ocliente.Nombre = txtNombre.Text;
                         ocliente.Direccion = txtDireccion.Text;
 
 
                         CD_ClienteXpos obj = new CD_ClienteXpos();
 
-                        obj.ActualizarNombreYDireccion(ocliente);
+                       obj.ActualizarDireccionCliente(ocliente);
                                        
 
 
                     }
                     else
                     {
-                        // Restaurar los valores originales
-                        txtNombre.Text = nombreOriginal;
-                        txtDireccion.Text = direccionOriginal;
+
+                        // si no  desea modificar la direccion en la base de datos entoces modificar la direccion a 'solo
+                        // por hoy' para que sea mas visible para el cajero de marcarlo.
+                        string direccion = this.txtDireccion.Text; 
+                        direccion += " - SOLO POR HOY";
+                        txtDireccion.Text = direccion;
+
                     }
                 }
             }
